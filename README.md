@@ -3,7 +3,7 @@ Stačí spustit `composer update` a pak PHP soubor `index.php` přes CLI nebo br
 
 Běží na PHP 7.2+
 
-K otestování jsem využil Nette Tester - pokud je vše dle předpokladů zobrazí se *OK* a seznam uživatelů s přidělenými oprávěnními. 
+K otestování jsem využil Nette Tester - pokud je vše dle předpokladů zobrazí se *OK* a seznam uživatelů s přidělenými oprávněními. 
 
 Test vyžaduje připojení k MySQL databázi, konfigurace připojení je v `config.neon`. Vytvoření tabulek a naplnění daty je pro tento účel v konstruktoru metody ACL. 
 
