@@ -1,0 +1,17 @@
+{
+	"require": {
+		"nette/nette": "^2.4",
+		"nette/tester": "^2.3"
+	},
+        
+	"minimum-stability": "stable",
+    
+        "prefer-stable": true,
+    
+	"config": {
+		"platform": {   
+			"php": "7.3.18"
+		},
+                "preferred-install": "dist"
+	}
+}

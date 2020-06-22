@@ -1,0 +1,23 @@
+parameters:
+        database:
+                driver: mysql
+                host: localhost
+                database: test
+                username: root
+                password: ****
+
+php:
+	date.timezone: Europe/Prague
+
+database:
+        dsn: '%database.driver%:host=%database.host%;dbname=%database.database%'
+        user: %database.username%
+        password: %database.password%
+        options: [PDO::MYSQL_ATTR_COMPRESS = true, PDO::ATTR_TIMEOUT = 10]
+        debugger: true         # panel v debugger baru
+        explain: false         # explain dotazu v debugger bar
+        reflection: discovered # nebo conventional nebo classname, vychozi je discovered
+        autowired: true
+
+di:
+        debugger: false
